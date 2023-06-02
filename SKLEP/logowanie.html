@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<style>
+.log {
+    background-color: #555;
+}
+</style>
+
+<body>
+    <header>
+        <div class="top">
+          <a class="rej" href="rejestracja.html">Rejestracja</a>
+          <a class="log" href="logowanie.html">Logowanie</a>
+          <a class="home" href="index.html">Strona Glowna</a>
+          <h1>SKLEP konkuterowy</h1>
+      </div>
+    </header>
+
+    <div class="container">
+        <h2>Logowanie</h2>
+          <form method="POST" action="logowanie.php">
+                <label for="username">Nazwa użytkownika:</label>
+                <input type="text" name="username" required><br>
+                <label for="password">Hasło:</label>
+                <input type="password" name="password" required><br>
+                <input type="submit" value="Zaloguj się">
+          </form>
+    </div>
+</body>
+</html>

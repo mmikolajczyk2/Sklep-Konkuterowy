@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Sklep internetowy</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+      <div class="top">
+        <a class="rej" href="rejestracja.html">Rejestracja</a>
+        <a class="log" href="logowanie.html">Logowanie</a>
+        <h1>SKLEP konkuterowy</h1>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <?php if (isset($_SESSION['username'])) : ?>
+      <h2>Zarządzanie użytkownikami</h2>
+      <ul>
+        <li><a href="wyswietl_uzytkownikow.php">Wyświetl wszystkich użytkowników</a></li>
+        <li><a href="dodaj_edytuj_uzytkownika.php">Dodaj nowego użytkownika</a></li>
+      </ul>
+
+      <h2>Zarządzanie produktami</h2>
+      <ul>
+        <li><a href="wyswietl_produkty.php">Wyświetl wszystkie produkty</a></li>
+        <li><a href="dodaj_produkt.php">Dodaj nowy produkt</a></li>
+      </ul>
+
+      <h2>Koszyk</h2>
+      <ul>
+        <li><a href="wyswietl_koszyk.php">Wyświetl koszyk</a></li>
+        <li><a href="zloz_zamowienie.php">Złóż zamówienie</a></li>
+      </ul>
+
+      <h2>Wylogowanie</h2>
+      <form method="POST" action="wylogowanie.php">
+        <input type="submit" value="Wyloguj się">
+      </form>
+    <?php endif; ?>
+  </div>
+</body>
+</html>
