@@ -5,7 +5,9 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Sklep internetowy</title>
-	<link rel="stylesheet" href="categoriesstyle.css">
+	<link rel="stylesheet" href="style/categories.css">
+	<link rel="stylesheet" href="style/profil_1.css">
+	<link rel="stylesheet" href="style/profil_2.css">
 
 	
 </head>
@@ -26,161 +28,12 @@
 	</ul>
 	
 	</div>
-	<style>
-	.profile-main-container{
-		width: 800px;
-		height: 75px;
-		background-image: linear-gradient(to right,#deeaee,#FFFECF,#C3EBF9,#C2F5CF,#FFFECF);
-		border: 5px solid green;
-		margin: 0 auto;
-		margin-top: 50px;
-		font-size: 50px;
-		text-align: center;
-	}
-	.profile-number-container{
-		width: 600px;
-		height: 75px;
-		background-image: linear-gradient(to right,#deeaee,#FFFECF,#C3EBF9,#C2F5CF,#FFFECF);
-		border: 5px solid green;
-		margin: 0 auto;
-		margin-top: 20px;
-		font-size: 25px;
-		text-align: center;
-	}
-	.number-area{
-		margin-top: 17px;
-		margin-left: 75px;
-		float: left;
-	}
-	.button-area{
-		text-align: right;
-		float: right;
-	}
-	
-	.button-area input[type="submit"]
-	{
-		margin-top: 11px;
-		border: none;
-		outline: none;
-		height: 40px;
-		width: 150px;
-		margin-right: 75px;
-		background: #fb2525;
-		color: #fff;
-		font-size: 15px;
-		border-radius: 20px;
-	}
-	.button-area input[type="submit"]:hover
-	{
-		cursor: pointer;
-		background: #ffc107;
-		color: #000;
-	}
-	.container-for-orders
-	{
-		width: 800px;
-		height: 75px;
-		background-image: linear-gradient(to right,#deeaee,#FFFECF,#C3EBF9,#C2F5CF,#FFFECF);
-		border: 5px solid green;
-		margin: 0 auto;
-		margin-top: 50px;
-		font-size: 42px;
-		text-align: center;	
-	}
-	.container-for-orders input[type="submit"]
-	{
-		border: none;
-		outline: none;
-		height: 65px;
-		font-style: italic;
-		font-weight: bold;
-		width: 790px;
-		margin-right: 75px;
-		background-image: linear-gradient(to right,#deeaee,#FFFECF,#C3EBF9,#C2F5CF,#FFFECF);
-		color: black;
-		font-size: 40px;
-	}
-	.container-for-orders input[type="submit"]:hover
-	{
-		cursor: pointer;
-		background: #ffc107;
-		color: #000;
-	}
-	</style>
 	<div class="container-for-orders">
 		<a href="moje_zamowienia.php"><input type="submit" name="submit" value="Zobacz swoje zamówienia [TUTAJ]"/></a>
 	</div>
 	
 	<style>
-	.adress
-	{
-		margin-top: 25px;
-		float: left;
-		font-size: 18px;
-		margin-left: 15px;
-	}
-	.profile-adress-container{
-		width: 600px;
-		height: 125px;
-		background-image: linear-gradient(to right,#deeaee,#FFFECF,#C3EBF9,#C2F5CF,#FFFECF);
-		border: 5px solid green;
-		margin: 0 auto;
-		margin-top: 25px;
-		font-size: 25px;
-		text-align: center;
-	}
-	.button-area-adress{
-		text-align: right;
-		float: right;
-	}
 	
-	.button-area-adress input[type="submit"]
-	{
-		margin-top: 33px;
-		border: none;
-		outline: none;
-		height: 40px;
-		width: 150px;
-		margin-right: 75px;
-		background: #fb2525;
-		color: #fff;
-		font-size: 15px;
-		border-radius: 20px;
-	}
-	.button-area-adress input[type="submit"]:hover
-	{
-		cursor: pointer;
-		background: #ffc107;
-		color: #000;
-	}
-	.button_new_adrr
-	{
-		float: right;
-	}
-	.button_new_adrr input[type="submit"]
-	{
-		margin-top: 10px;
-		border: none;
-		outline: none;
-		height: 40px;
-		width: 150px;
-		margin-right: 75px;
-		background: #fb2525;
-		color: #fff;
-		font-size: 15px;
-		border-radius: 20px;
-	}
-	.button_new_adrr input[type="submit"]:hover
-	{
-		cursor: pointer;
-		background: #ffc107;
-		color: #000;	
-	}
-	.text
-	{
-		float: left;
-		margin-left: 10px;
-	}
 	</style>
 	<div class="profile-main-container">
 		<div class="text">

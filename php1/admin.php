@@ -5,7 +5,7 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Sklep internetowy</title>
-	<link rel="stylesheet" href="adminstyle.css">
+	<link rel="stylesheet" href="style/adminstyle.css">
 	
 	
 </head>

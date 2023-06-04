@@ -8,7 +8,7 @@
 <html lang="pl">
 <head>
 	<meta charset="utf-8" />
-	<link rel="stylesheet" href="rejestracja.css">
+	<link rel="stylesheet" href="style/rejestracja.css">
 </head>
 <body>
 	<div class="loginbox">

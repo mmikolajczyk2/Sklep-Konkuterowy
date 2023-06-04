@@ -1,0 +1,52 @@
+.container {
+    width: 800px;
+    height: 200px;
+    background-image: linear-gradient(to right,#deeaee,#FFFECF,#C3EBF9,#C2F5CF,#FFFECF);
+    border: 5px solid green;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+.image {
+    height: 190px;
+    width: 250px;
+    border-right: 5px solid green;
+    float:left;
+}
+
+.containerForText {
+    float:center;
+    text-align: center;
+    margin: 15px;
+}
+.containerForPrice {
+    background-color: yellow;
+    float: center;
+}
+.price {
+    float: right;
+}
+.description {
+    margin-top: 50px;
+    font-size: 12px;
+}
+.okbutton {
+    margin-top:3px;
+}
+.okbutton input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 175px;
+    margin-top: 15px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 25px;
+}
+.okbutton input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}

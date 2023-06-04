@@ -1,7 +1,6 @@
 <?php include "dbconnect.php"; ?>
 <?php include "html.php"; ?>
-
-		
+	
 	<div class="profile-main-container">
 		Przedmioty promowane.
 	</div>

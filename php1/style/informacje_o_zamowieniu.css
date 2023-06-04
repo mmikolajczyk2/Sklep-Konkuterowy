@@ -1,0 +1,137 @@
+.profile-main-container{
+    width: 800px;
+    height: 95px;
+    background-image: linear-gradient(to right,#deeaee,#FFFECF,#C3EBF9,#C2F5CF,#FFFECF);
+    border: 5px solid green;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 50px;
+    text-align: left;
+}
+.text
+{
+    float: left;
+    font-size: 40px;
+    margin-left: 20px;
+    margin-top: 17px;
+}
+.but
+{
+    float: right;
+    
+}
+.but input[type="submit"]
+{
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 240px;
+    margin-right: 75px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 20px;
+}
+.but input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+.container-for-goods{
+    width: 800px;
+    height: 75px;
+    background-image: linear-gradient(to right,#deeaee,#FFFECF,#C3EBF9,#C2F5CF,#FFFECF);
+    border: 5px solid green;
+    margin: 0 auto;
+    margin-top: 25px;
+    font-size: 50px;
+    text-align: center;
+}
+.list {
+    float: left;
+    font-size: 12px;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.date {
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+    float: right;
+    margin-right: 40px;
+}
+
+.modify-container
+	{
+		width: 800px;
+		height: 95px;
+		background-image: linear-gradient(to right,#deeaee,#FFFECF,#C3EBF9,#C2F5CF,#FFFECF);
+		border-left: 5px solid green;
+		border-bottom: 5px solid green;
+		border-right: 5px solid green;
+		margin: 0 auto;
+		margin-top: 0px;
+		font-size: 50px;
+		text-align: left;	
+	}
+	.modify-container p 
+	{
+		font-size: 20px;
+		padding-top: 30px;
+		padding-left: 30px;
+	}
+
+    .modify-container input[type="submit"]
+	{
+		border: none;
+		outline: none;
+		height: 40px;
+		width: 240px;
+		margin-right: 75px;
+		background: #fb2525;
+		color: #fff;
+		font-size: 15px;
+		border-radius: 20px;	
+		float: right;
+	}
+	.modify-container input[type="submit"]:hover
+	{
+		cursor: pointer;
+		background: #ffc107;
+		color: #000;
+	}
+    .last-container
+	{
+		width: 800px;
+		height: 95px;
+		background-image: linear-gradient(to right,#deeaee,#FFFECF,#C3EBF9,#C2F5CF,#FFFECF);
+		border-left: 5px solid green;
+		border-bottom: 5px solid green;
+		border-right: 5px solid green;
+		margin: 0 auto;
+		margin-top: 0px;
+		font-size: 50px;
+		text-align: left;	
+	}
+	.last-container input[type="submit"]
+	{
+		border: none;
+		outline: none;
+		height: 50px;
+		width: 300px;
+		margin-right: 75px;
+		background: #fb2525;
+		color: #fff;
+		font-size: 15px;
+		margin-left: 250px;
+		border-radius: 30px;	
+	}
+	.last-container input[type="submit"]:hover
+	{
+		cursor: pointer;
+		background: #ffc107;
+		color: #000;
+	}

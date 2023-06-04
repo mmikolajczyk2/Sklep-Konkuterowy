@@ -1,7 +1,13 @@
 <?php include "dbconnect.php"; ?>
 <?php include "html.php"; ?>
 
-	
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<link rel="stylesheet" href="style/koszyk.css">
+</head>
+</html>
+
 	<?php
 	
 		$sql = "SELECT * FROM koszyk WHERE ID_Klient='".$_SESSION["ID"]."'";
@@ -59,38 +65,7 @@
 				}
 			}
 			?>
-			<style>
-			.pay-container
-			{
-				width: 800px;
-				height: 150px;
-				background-image: linear-gradient(to right,#deeaee,#FFFECF,#C3EBF9,#C2F5CF,#FFFECF);
-				border: 5px solid green;
-				margin: 0 auto;
-				margin-top: 50px;
-				font-size: 50px;
-				text-align: center;
-			}
-			.pay-container input[type="submit"]
-			{
-				margin-top: 10px;
-				border: none;
-				font-weight: bold;
-				outline: none;
-				height: 50px;
-				width: 250px;
-				background: #fb2525;
-				color: #fff;
-				font-size: 16px;
-				border-radius: 30px;		
-			}
-			.pay-container input[type="submit"]:hover
-			{
-				cursor: pointer;
-				background: #ffc107;
-				color: #000;
-			}
-			</style>
+			
 			<div class="pay-container">
 				Do zapłaty łącznie: 
 				<?php

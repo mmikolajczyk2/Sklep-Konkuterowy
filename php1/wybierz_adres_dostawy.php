@@ -5,7 +5,8 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Sklep internetowy</title>
-	<link rel="stylesheet" href="categoriesstyle.css">
+	<link rel="stylesheet" href="style/categories.css">
+	<link rel="stylesheet" href="style/adres_dostawy.css">
 
 	
 </head>
@@ -24,72 +25,8 @@
 		<li><a href="koszyk.php">Koszyk</a>
 		<li><a href="profil.php">Profil</a>
 	</ul>
-	
 	</div>
-	<style>
-	
-	.profile-main-container{
-		width: 800px;
-		height: 75px;
-		background-image: linear-gradient(to right,#deeaee,#FFFECF,#C3EBF9,#C2F5CF,#FFFECF);
-		border: 5px solid green;
-		margin: 0 auto;
-		margin-top: 50px;
-		font-size: 50px;
-		text-align: center;
-	}
-	.adrs 
-	{
-		margin-top: 10px;
-		text-align: center;
-	}
-	
-	.adrs input[type="submit"]
-	{
-		border: none;
-		outline: none;
-		height: 75px;
-		width: 500px;
-		margin-top: 15px;
-		background-image: linear-gradient(to right,#deeaee,#FFFECF,#C3EBF9,#C2F5CF,#FFFECF);
-		border: 5px solid green;
-		color: black;
-		font-size: 16px;
-		border-radius: 50px;
-	}
-	.adrs input[type="submit"]:hover
-	{
-		curson: pointer;
-		background: #ffc107;
-		color: #000;
-	}
-	.new_adrs
-	{
-		margin-top: 40px;
-		text-align: center;	
-	}
-	.new_adrs input[value="DODAJ NOWY ADRES!"]
-	{
-		border: none;
-		outline: none;
-		height: 75px;
-		width: 500px;
-		margin-top: 15px;
-		background-image: linear-gradient(to right,#deeaee,#FFFECF,#C3EBF9,#C2F5CF,#FFFECF);
-		border: 5px solid green;
-		color: black;
-		font-size: 25px;
-		font-style: italic;
-		font-weight: bold;
-		border-radius: 50px;
-	}
-	.new_adrs input[value="DODAJ NOWY ADRES!"]:hover
-	{
-		curson: pointer;
-		background: #ffc107;
-		color: #000;	
-	}
-	</style>
+
 	<div class="profile-main-container">
 		Wybierz adres dostawy.
 	</div>
@@ -114,12 +51,6 @@
 		}
 	?>
 	
-	
-		
-	
-	
-
-
 	<div class="new_adrs">
 		<a href="tworzenie_adresu.php"><input type="submit" value="DODAJ NOWY ADRES!"/></a>
 	</div>

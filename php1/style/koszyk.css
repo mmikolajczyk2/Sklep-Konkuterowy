@@ -1,0 +1,30 @@
+.pay-container
+			{
+				width: 800px;
+				height: 150px;
+				background-image: linear-gradient(to right,#deeaee,#FFFECF,#C3EBF9,#C2F5CF,#FFFECF);
+				border: 5px solid rgb(136, 15, 136);
+				margin: 0 auto;
+				margin-top: 50px;
+				font-size: 50px;
+				text-align: center;
+			}
+			.pay-container input[type="submit"]
+			{
+				margin-top: 10px;
+				border: none;
+				font-weight: bold;
+				outline: none;
+				height: 50px;
+				width: 250px;
+				background: #920848;
+				color: #fff;
+				font-size: 16px;
+				border-radius: 30px;		
+			}
+			.pay-container input[type="submit"]:hover
+			{
+				cursor: pointer;
+				background: #26073b;
+				color: #000;
+			}

@@ -5,7 +5,8 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Sklep internetowy</title>
-	<link rel="stylesheet" href="categoriesstyle.css">
+	<link rel="stylesheet" href="style/categories.css">
+	<link rel="stylesheet" href="style/moje_zamowienia.css">
 	
 </head>
 <body>
@@ -25,47 +26,11 @@
 	</ul>
 	
 	</div>
-	<style>
-	.profile-main-container{
-		width: 800px;
-		height: 75px;
-		background-image: linear-gradient(to right,#deeaee,#FFFECF,#C3EBF9,#C2F5CF,#FFFECF);
-		border: 5px solid green;
-		margin: 0 auto;
-		margin-top: 50px;
-		font-size: 50px;
-		text-align: center;
-	}
-	.container-for-goods{
-		width: 800px;
-		height: 75px;
-		background-image: linear-gradient(to right,#deeaee,#FFFECF,#C3EBF9,#C2F5CF,#FFFECF);
-		border: 5px solid green;
-		margin: 0 auto;
-		margin-top: 25px;
-		font-size: 50px;
-		text-align: center;
-	}
-	.list {
-		float: left;
-		font-size: 12px;
-		text-align: left;
-		margin-top: 10px;
-		margin-left: 10px;
-	}
-	.date {
-		font-size: 18px;
-		margin-top: 20px;
-		text-align: center;
-		float: right;
-		margin-right: 40px;
-	}
-	</style>
 	<div class="profile-main-container">
 		Twoje zamówienia.
 	</div>
 
-	
+
 	<?php
 		$basic_height=100;
 		$sql = "SELECT * FROM zamowienia WHERE ID_Klient='".$_SESSION["ID"]."'";

@@ -4,7 +4,8 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Sklep internetowy</title>
-	<link rel="stylesheet" href="adminstyle.css">
+	<link rel="stylesheet" href="style/adminstyle.css">
+	<link rel="stylesheet" href="style/zamowienie.css">
 	
 	
 </head>
@@ -22,67 +23,7 @@
 		<li><a href="index.php">Wyloguj się </a></li>
 	</ul>
 	</div>
-	<style>
-	.profile-main-container{
-		width: 800px;
-		height: 95px;
-		background-image: linear-gradient(to right,#deeaee,#FFFECF,#C3EBF9,#C2F5CF,#FFFECF);
-		border: 5px solid green;
-		margin: 0 auto;
-		margin-top: 50px;
-		font-size: 50px;
-		text-align: center;
-	}
-	.profile-main-container p
-	{
-		font-size: 50px;
-		margin-top: 10px;
-	}
-	.container-for-goods{
-		width: 800px;
-		height: 75px;
-		background-image: linear-gradient(to right,#deeaee,#FFFECF,#C3EBF9,#C2F5CF,#FFFECF);
-		border: 5px solid green;
-		margin: 0 auto;
-		margin-top: 25px;
-		font-size: 50px;
-		text-align: center;
-	}
-	.list {
-		float: left;
-		font-size: 12px;
-		text-align: left;
-		margin-top: 10px;
-		margin-left: 10px;
-	}
-	.date {
-		font-size: 18px;
-		margin-top: 20px;
-		text-align: center;
-		float: right;
-		margin-right: 40px;
-	}
-	.date input[type="submit"]
-	{
-		margin-top: 20px;
-		border: none;
-		outline: none;
-		height: 40px;
-		width: 240px;
-		margin-right: 75px;
-		background: #fb2525;
-		color: #fff;
-		font-size: 15px;
-		border-radius: 20px;
-		
-	}
-	.date input[type="submit"]:hover
-	{
-		curson: pointer;
-		background: #ffc107;
-		color: #000;
-	}
-	</style>
+
 	<div class="profile-main-container">
 		<p>Zamówienia klientów!</p>
 	</div>

@@ -1,0 +1,41 @@
+.profile-main-container{
+    width: 800px;
+    height: 95px;
+    background-image: linear-gradient(to right,#deeaee,#FFFECF,#C3EBF9,#C2F5CF,#FFFECF);
+    border: 5px solid green;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 50px;
+    text-align: left;
+}
+.text
+{
+    float: left;
+    font-size: 40px;
+    margin-left: 20px;
+    margin-top: 17px;
+}
+.but
+{
+    float: right;
+    
+}
+.but input[type="submit"]
+{
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 240px;
+    margin-right: 75px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 20px;
+}
+.but input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}

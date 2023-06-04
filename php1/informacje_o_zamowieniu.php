@@ -1,5 +1,4 @@
 
-
 <?php
 	session_start();
 
@@ -19,7 +18,8 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Sklep internetowy</title>
-	<link rel="stylesheet" href="adminstyle.css">
+	<link rel="stylesheet" href="style/adminstyle.css">
+	<link rel="stylesheet" href="style/informacje_o_zamowieniu.css">
 	
 	
 </head>
@@ -37,73 +37,7 @@
 		<li><a href="index.php">Wyloguj się </a>
 	</ul>
 	</div>
-	<style>
-	.profile-main-container{
-		width: 800px;
-		height: 95px;
-		background-image: linear-gradient(to right,#deeaee,#FFFECF,#C3EBF9,#C2F5CF,#FFFECF);
-		border: 5px solid green;
-		margin: 0 auto;
-		margin-top: 50px;
-		font-size: 50px;
-		text-align: left;
-	}
-	.text
-	{
-		float: left;
-		font-size: 40px;
-		margin-left: 20px;
-		margin-top: 17px;
-	}
-	.but
-	{
-		float: right;
-		
-	}
-	.but input[type="submit"]
-	{
-		margin-top: 20px;
-		border: none;
-		outline: none;
-		height: 40px;
-		width: 240px;
-		margin-right: 75px;
-		background: #fb2525;
-		color: #fff;
-		font-size: 15px;
-		border-radius: 20px;
-	}
-	.but input[type="submit"]:hover
-	{
-		cursor: pointer;
-		background: #ffc107;
-		color: #000;
-	}
-	.container-for-goods{
-		width: 800px;
-		height: 75px;
-		background-image: linear-gradient(to right,#deeaee,#FFFECF,#C3EBF9,#C2F5CF,#FFFECF);
-		border: 5px solid green;
-		margin: 0 auto;
-		margin-top: 25px;
-		font-size: 50px;
-		text-align: center;
-	}
-	.list {
-		float: left;
-		font-size: 12px;
-		text-align: left;
-		margin-top: 10px;
-		margin-left: 10px;
-	}
-	.date {
-		font-size: 18px;
-		margin-top: 20px;
-		text-align: center;
-		float: right;
-		margin-right: 40px;
-	}
-	</style>
+
 	<div class="profile-main-container">
 		<div class="text">
 			Informacje o zamówieniu!
@@ -215,50 +149,7 @@
 		}
 		
 	?>
-	<style>
 	
-	.modify-container
-	{
-		width: 800px;
-		height: 95px;
-		background-image: linear-gradient(to right,#deeaee,#FFFECF,#C3EBF9,#C2F5CF,#FFFECF);
-		border-left: 5px solid green;
-		border-bottom: 5px solid green;
-		border-right: 5px solid green;
-		margin: 0 auto;
-		margin-top: 0px;
-		font-size: 50px;
-		text-align: left;	
-	}
-	.modify-container p 
-	{
-		font-size: 20px;
-		padding-top: 30px;
-		padding-left: 30px;
-	}
-	</style>
-	
-	<style>
-	.modify-container input[type="submit"]
-	{
-		border: none;
-		outline: none;
-		height: 40px;
-		width: 240px;
-		margin-right: 75px;
-		background: #fb2525;
-		color: #fff;
-		font-size: 15px;
-		border-radius: 20px;	
-		float: right;
-	}
-	.modify-container input[type="submit"]:hover
-	{
-		cursor: pointer;
-		background: #ffc107;
-		color: #000;
-	}
-	</style>
 	<div class="modify-container">
 		<form action="zmien_date.php" method="post">
 			<p>Modyfikuj zmień datę: 
@@ -288,48 +179,12 @@
 		</form>
 	</div>
 	
-	<style>
-	.last-container
-	{
-		width: 800px;
-		height: 95px;
-		background-image: linear-gradient(to right,#deeaee,#FFFECF,#C3EBF9,#C2F5CF,#FFFECF);
-		border-left: 5px solid green;
-		border-bottom: 5px solid green;
-		border-right: 5px solid green;
-		margin: 0 auto;
-		margin-top: 0px;
-		font-size: 50px;
-		text-align: left;	
-	}
-	.last-container input[type="submit"]
-	{
-		border: none;
-		outline: none;
-		height: 50px;
-		width: 300px;
-		margin-right: 75px;
-		background: #fb2525;
-		color: #fff;
-		font-size: 15px;
-		margin-left: 250px;
-		border-radius: 30px;	
-	}
-	.last-container input[type="submit"]:hover
-	{
-		cursor: pointer;
-		background: #ffc107;
-		color: #000;
-	}
-	</style>
+	
 	<div class="last-container">
 		<form action="usun_zamowienie.php" method="post">
 			<input type="submit" value="Usuń zamówienie z bazy danych!">
 		</form>
 	</div>
-	
-	
-	
 
 </body>
 </html>

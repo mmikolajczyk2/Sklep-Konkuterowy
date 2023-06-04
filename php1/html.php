@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Sklep internetowy</title>
-	<link rel="stylesheet" href="categoriesstyle.css">
+	<link rel="stylesheet" href="style/categories.css">
 	
 	
 </head>
