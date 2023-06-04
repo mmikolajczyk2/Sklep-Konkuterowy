@@ -1,22 +1,8 @@
-<?php
-
-	session_start();
-
-	require_once "connect.php";
-	
-	$polaczenie = new mysqli($host, $db_user, $db_password, $db_name);
-
-	if($polaczenie->connect_errno!=0)
-	{
-		echo "Error: ".$polaczenie->connect_errno;
-	}
-?>
-
-
+<?php include "dbconnect.php"; ?>
 <?php include "html.php"; ?>
 		
 	<?php
-		$sql = "SELECT * FROM produkt WHERE Kategoria='sluchawki'";
+		$sql = "SELECT * FROM produkt WHERE Kategoria='konsola'";
 		$rezultat = @$polaczenie->query($sql);
 		while($row = $rezultat->fetch_assoc()) 
 		{
@@ -34,7 +20,7 @@
 			echo '		</div>';
 			echo '		<div class="okbutton">';
 			echo '			<input type="submit" value="DODAJ DO KOSZYKA!"/>';
-			echo '			<input type="hidden" name="kategoria" value="sluchawki"/>';
+			echo '			<input type="hidden" name="kategoria" value="konsola"/>';
 			echo '			<input type="hidden" name="id_produktu" value="'.$row["ID_Produktu"].'"/>';
 			echo '		</div>';		
 			echo '	</div>';
@@ -44,3 +30,5 @@
 		
 	?>
 	
+
+

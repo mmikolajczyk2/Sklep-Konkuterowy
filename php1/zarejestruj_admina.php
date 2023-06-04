@@ -11,6 +11,7 @@
 	}
 	else
 	{
+		$admin = $_SESSION['admin'];
 		$forename = 'admin';
 		$surname = 'admin';
 		$login = $_POST['login'];
@@ -18,8 +19,13 @@
 		$haslo2 = $_POST['haslo2'];
 		$crypt_haslo1 = crypt($_POST['haslo1'], 'rl');
 		$crypt_haslo2 = crypt($_POST['haslo2'], 'rl');
-	
-		if(empty($login)||empty($haslo1)||empty($haslo2)) 
+
+		if($admin != 1)
+		{
+			$_SESSION['blad1'] = '<span style="color:red">Nie jesteś adminem</span>';
+			header('Location: nowy_admin.php');	
+		}
+		else if(empty($login)||empty($haslo1)||empty($haslo2)) 
 		{
 			$_SESSION['blad1'] = '<span style="color:red">Któreś pole jest puste!</span>';
 			header('Location: nowy_admin.php');
@@ -39,6 +45,7 @@
 			$_SESSION['blad1'] = '<span style="color:red">Login jest za krótki!</span>';
 			header('Location: nowy_admin.php');			
 		}
+	
 		else
 		{
 			$sql = "SELECT * FROM danelogowania WHERE login='$login'";
@@ -70,11 +77,8 @@
 				echo "Coś poszło nie tak!";
 			}
 		}
-		
-		
-		
-		
-		$polaczenie->close();
 	}
+
+		$polaczenie->close();
 	
 ?>

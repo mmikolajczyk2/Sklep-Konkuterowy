@@ -24,7 +24,7 @@
 		{
 			echo 'cos poszlo nie tak';
 		}
-		//header("Location: informacje_o_zamowieniu.php");
+		
 		$polaczenie->close();
 	}
 	

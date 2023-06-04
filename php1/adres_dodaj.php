@@ -19,6 +19,7 @@
 		$ulica = $_POST["ulica"];
 		$nrulicy = $_POST["nrulicy"];
 		$lokal = $_POST["lokal"];
+		
 		if(empty($email) || empty($miasto) || empty($kod1) || empty($kod2) || empty($ulica) || empty($nrulicy))
 		{
 			$_SESSION['blad2'] = '<span style="color:red">Któreś pole jest puste!</span>';

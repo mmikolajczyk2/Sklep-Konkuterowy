@@ -1,26 +1,11 @@
-
-
-<?php
-	session_start();
-
-	require_once "connect.php";
-	
-	$polaczenie = new mysqli($host, $db_user, $db_password, $db_name);
-
-	if($polaczenie->connect_errno!=0)
-	{
-		echo "Error: ".$polaczenie->connect_errno;
-	}
-	unset($_SESSION['blad_item']);
-	unset($_SESSION['blad_item2']);
-?>
+<?php include "dbconnect.php"; ?>
 <!DOCTYPE HTML>
 <html lang="pl">
 <head>
 	<meta charset="utf-8" />
 	<title>Sklep internetowy</title>
 	<link rel="stylesheet" href="adminstyle.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	
 	
 </head>
 <body>
@@ -122,10 +107,6 @@
 			$sql_adr = "SELECT * FROM daneadresowe WHERE unique_ID='".$row["Adres_unique_id"]."'";
 			$rezultat_adr = @$polaczenie->query($sql_adr);
 			$row_adr = $rezultat_adr->fetch_assoc();
-			
-			$sql_phone = "SELECT * FROM telefon WHERE ID_Telefon='".$row["ID_Klient"]."'";
-			$rezultat_phone = @$polaczenie->query($sql_phone);
-			$row_phone = $rezultat_phone->fetch_assoc();		
 			
 			$kod_lewo=intval($row_adr["KodPocztowy"]/1000);
 			$kod_prawo=$row_adr["KodPocztowy"]-$kod_lewo*1000;

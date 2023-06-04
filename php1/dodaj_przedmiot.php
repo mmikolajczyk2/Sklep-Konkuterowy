@@ -16,7 +16,7 @@
 		$cena = $_POST["cena"];
 		$kategoria = $_POST["kategoria"];
 		$opis = $_POST["opis"];
-		$text=" SportOgródJedzenieRozrywka i gamingElektronika";
+		$text=" SluchawkiLaptopKonsola";
 		$pos = strpos($text,$kategoria);
 		echo $pos;
 

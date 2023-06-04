@@ -1,16 +1,4 @@
-<?php
-
-	session_start();
-
-	require_once "connect.php";
-	unset($_SESSION['blad2']);
-	$polaczenie = new mysqli($host, $db_user, $db_password, $db_name);
-
-	if($polaczenie->connect_errno!=0)
-	{
-		echo "Error: ".$polaczenie->connect_errno;
-	}
-?>
+<?php include "dbconnect.php"; ?>
 
 <!DOCTYPE HTML>
 <html lang="pl">
@@ -18,7 +6,6 @@
 	<meta charset="utf-8" />
 	<title>Sklep internetowy</title>
 	<link rel="stylesheet" href="categoriesstyle.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 	
 </head>
 <body>
@@ -29,9 +16,9 @@
 			echo "Witaj, ".$_SESSION['Imie']."!";
 		?>
 		<li><a href=sklep.php>Strona Główna </a>
-		<li><a href="elektronika.php">Sluchawki </a>
-		<li><a href="sport.php">Laptopy </a>
-		<li><a href="jedzenie.php">Konsole </a>
+		<li><a href="sluchawki.php">Sluchawki </a>
+		<li><a href="laptop.php">Laptopy </a>
+		<li><a href="konsola.php">Konsole </a>
 		<li><a href="koszyk.php">Koszyk</a>
 		<li><a href="profil.php">Profil</a>
 		<li><a href="index.php">Wyloguj się</a>
@@ -77,6 +64,8 @@
 	<div class="profile-main-container">
 		Twoje zamówienia.
 	</div>
+
+	
 	<?php
 		$basic_height=100;
 		$sql = "SELECT * FROM zamowienia WHERE ID_Klient='".$_SESSION["ID"]."'";

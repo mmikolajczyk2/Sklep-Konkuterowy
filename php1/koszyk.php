@@ -1,17 +1,4 @@
-<?php
-
-	session_start();
-
-	require_once "connect.php";
-	
-	$polaczenie = new mysqli($host, $db_user, $db_password, $db_name);
-
-	if($polaczenie->connect_errno!=0)
-	{
-		echo "Error: ".$polaczenie->connect_errno;
-	}
-?>
-
+<?php include "dbconnect.php"; ?>
 <?php include "html.php"; ?>
 
 	
@@ -99,7 +86,7 @@
 			}
 			.pay-container input[type="submit"]:hover
 			{
-				curson: pointer;
+				cursor: pointer;
 				background: #ffc107;
 				color: #000;
 			}

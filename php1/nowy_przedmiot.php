@@ -1,15 +1,4 @@
-<?php
-
-	session_start();
-	require_once "connect.php";
-	
-	$polaczenie = new mysqli($host, $db_user, $db_password, $db_name);
-
-	if($polaczenie->connect_errno!=0)
-	{
-		echo "Error: ".$polaczenie->connect_errno;
-	}
-?>
+<?php include "dbconnect.php"; ?>
 
 <!DOCTYPE HTML>
 <html lang="pl">
@@ -17,7 +6,6 @@
 	<meta charset="utf-8" />
 	<title>Sklep internetowy</title>
 	<link rel="stylesheet" href="adminstyle.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 	
 </head>
 <body>

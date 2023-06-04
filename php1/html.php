@@ -4,7 +4,7 @@
 	<meta charset="utf-8" />
 	<title>Sklep internetowy</title>
 	<link rel="stylesheet" href="categoriesstyle.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	
 	
 </head>
 <body>
@@ -15,9 +15,9 @@
 				echo "Witaj, ".$_SESSION['Imie']."!";
 			?>
 			<li><a href=sklep.php>Strona Główna </a>
-			<li><a href="elektronika.php">Sluchawki </a>
-			<li><a href="sport.php">Laptopy </a>
-			<li><a href="jedzenie.php">Konsole </a>
+			<li><a href="sluchawki.php">Sluchawki </a>
+			<li><a href="laptop.php">Laptopy </a>
+			<li><a href="konsola.php">Konsole </a>
 			<li><a href="koszyk.php">Koszyk</a>
 			<li><a href="profil.php">Profil</a>
 			<li><a href="index.php">Wyloguj się</a>
