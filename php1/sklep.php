@@ -10,106 +10,13 @@
 		echo "Error: ".$polaczenie->connect_errno;
 	}
 ?>
+<?php include "html.php"; ?>
 
-<!DOCTYPE HTML>
-<html lang="pl">
-<head>
-	<meta charset="utf-8" />
-	<title>Sklep internetowy</title>
-	<link rel="stylesheet" href="sklepstyle.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-	
-</head>
-<body>
-	<div class="menu-bar"> 
-	<ul>
-		<?php
-			echo "Witaj, ".$_SESSION['Imie']."!";
-		?>
-		<li class="active">Wybierz kategorię</li>
-		<li><a href="elektronika.php">Sluchawki </a><i class="fas fa-tv"></i></li>
-		<li><a href="sport.php">Laptopy </a><i class="fa fa-volleyball-ball"></i></li>
-		<li><a href="jedzenie.php">Konsole </a><i class="fas fa-utensils"></i></li>
-		<li><a href="koszyk.php">Koszyk</a><i class="fas fa-shopping-cart"></i></li>
-		<li><a href="profil.php">Profil</a><i class="fas fa-user"></i></li>
-		<li><a href="index.php">Wyloguj się</a><i class="fas fa-sign-out-alt"></i></li>
-	</ul>
-	</div>
-	<style>
-	.profile-main-container{
-		width: 800px;
-		height: 75px;
-		background-image: linear-gradient(to right,#deeaee,#FFFECF,#C3EBF9,#C2F5CF,#FFFECF);
-		border: 5px solid green;
-		margin: 0 auto;
-		margin-top: 50px;
-		font-size: 50px;
-		text-align: center;
-	}
-	.container {
-		width: 800px;
-		height: 200px;
-		background-image: linear-gradient(to right,#deeaee,#FFFECF,#C3EBF9,#C2F5CF,#FFFECF);
-		border: 5px solid green;
-		margin: 0 auto;
-		margin-top: 5px;
-	}
-	.image {
-		height: 190px;
-		width: 250px;
-		border-right: 5px solid green;
-		float:left;
-	}
-
-	.containerForText {
-		float:center;
-		text-align: center;
-		margin: 15px;
-	}
-	.containerForPrice {
-		background-color: yellow;
-		float: center;
-	}
-	.price {
-		float: right;
-	}
-	.description {
-		margin-top: 50px;
-		font-size: 12px;
-	}
-	.purchase {
-		margin-top: 10px;
-	}
-	.purchase input {
-		width: 110px;
-		border: solid 2px green;
-	}
-	.okbutton {
-		margin-top:3px;
-	}
-	.okbutton input[type="submit"]
-	{
-		border: none;
-		outline: none;
-		height: 30px;
-		width: 135px;
-		margin-top: 15px;
-		background: #fb2525;
-		color: #fff;
-		font-size: 12px;
-		border-radius: 10px;
-	}
-	.okbutton input[type="submit"]:hover
-	{
-		cursor: pointer;
-		background: #ffc107;
-		color: #000;
-	}
-	</style>
+		
 	<div class="profile-main-container">
 		Przedmioty promowane.
 	</div>
-		
+	
 	<?php
 		$sql = "SELECT * FROM produkt WHERE Promowanie=TRUE";
 		$rezultat = @$polaczenie->query($sql);
@@ -141,5 +48,3 @@
 	
 
 
-</body>
-</html>

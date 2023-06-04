@@ -28,13 +28,13 @@
 		<?php
 			echo "Witaj, ".$_SESSION['Imie']."!";
 		?>
-		<li>Wybierz kategorię</li>
-		<li><a href="elektronika.php">Sluchawki</a><i class="fas fa-tv"></i></li>
-		<li><a href="sport.php">Laptopy </a><i class="fa fa-volleyball-ball"></i></li>
-		<li><a href="jedzenie.php">Konsole </a><i class="fas fa-utensils"></i></li>
-		<li><a href="koszyk.php">Koszyk</a><i class="fas fa-shopping-cart"></i></li>
-		<li><a href="profil.php">Profil</a><i class="fas fa-user"></i></li>
-		<li><a href="index.php">Wyloguj się</a><i class="fas fa-sign-out-alt"></i></li>
+		<li><a href=sklep.php>Strona Główna </a>
+		<li><a href="elektronika.php">Sluchawki</a>
+		<li><a href="sport.php">Laptopy </a>
+		<li><a href="jedzenie.php">Konsole </a>
+		<li><a href="koszyk.php">Koszyk</a>
+		<li><a href="profil.php">Profil</a>
+		<li><a href="index.php">Wyloguj się</a>
 	</ul>
 	
 	</div>

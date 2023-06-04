@@ -16,7 +16,7 @@ body
 }
 .menu-bar
 {
-	background: rgb(0,100,0);
+	background: rgb(100, 0, 78);
 	text-align: center;
 }
 .menu-bar ul
@@ -28,8 +28,8 @@ body
 }
 .menu-bar ul li
 {
-	width: 120px;
-	margin: 15px;
+	width: 180px;
+	margin: 25px;
 	padding: 15px;
 	border: 5px solid white;
 }
@@ -40,13 +40,13 @@ body
 }
 .active, .menu-bar ul li:hover
 {
-		background: #2bab0d;
+		background: #9a58b4;
 		border-radius: 3px;
 }
 
 .image
 {
-	width: 120px;
+	width: 180px;
 	height: 50px;
 }
 

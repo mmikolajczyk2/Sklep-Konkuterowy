@@ -32,7 +32,7 @@
 		<li><a href="nowy_przedmiot.php">Nowy przedmiot</a></li>
 		<li><a href="usun_przedmiot.php">Usuń przedmiot</a></li>
 		<li><a href="nowy_admin.php">Nowy admin</a></li>
-		<li><a href="index.php">Wyloguj się </a><i class="fas fa-sign-out-alt"></i></li>
+		<li><a href="index.php">Wyloguj się </a>
 	</ul>
 	</div>
 	<style>

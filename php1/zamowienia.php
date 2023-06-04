@@ -34,7 +34,7 @@
 		<li><a href="nowy_przedmiot.php">Nowy przedmiot</a></li>
 		<li><a href="usun_przedmiot.php">Usuń przedmiot</a></li>
 		<li><a href="nowy_admin.php">Nowy admin</a></li>
-		<li><a href="index.php">Wyloguj się </a><i class="fas fa-sign-out-alt"></i></li>
+		<li><a href="index.php">Wyloguj się </a></li>
 	</ul>
 	</div>
 	<style>
@@ -126,13 +126,7 @@
 			$sql_phone = "SELECT * FROM telefon WHERE ID_Telefon='".$row["ID_Klient"]."'";
 			$rezultat_phone = @$polaczenie->query($sql_phone);
 			$row_phone = $rezultat_phone->fetch_assoc();		
-			/*
-			echo $row_user["Imie"];
-			echo $row_adr["Adres"];
-			echo $row_phone["Telefon"].'<br>';
-			$row_phone = $rezultat_phone->fetch_assoc();	
-			echo $row_phone["Telefon"].'<br>';
-			*/
+			
 			$kod_lewo=intval($row_adr["KodPocztowy"]/1000);
 			$kod_prawo=$row_adr["KodPocztowy"]-$kod_lewo*1000;
 			$adres_caly = $row_adr["Miasto"]." ".$kod_lewo."-".$kod_prawo." ".$row_adr["Adres"];

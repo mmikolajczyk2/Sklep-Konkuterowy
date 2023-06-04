@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Cze 04, 2023 at 01:33 PM
+-- Generation Time: Cze 04, 2023 at 05:02 PM
 -- Wersja serwera: 10.4.28-MariaDB
 -- Wersja PHP: 8.2.4
 
@@ -64,11 +64,7 @@ CREATE TABLE `danelogowania` (
 --
 
 INSERT INTO `danelogowania` (`ID_Klient`, `login`, `password`, `Imie`, `Nazwisko`, `admin`) VALUES
-(15, 'lukas', 'admin', 'admin', 'admin', 1),
-(20, 'login123', 'login123', 'lukasz', 'sliwka', 0),
-(21, 'lookson', 'lookson123', 'Lukasz', 'sliwka', 0),
 (22, 'mikson123', 'rlpi9pxkQ80EI', 'mati', 'szmik', 1),
-(23, 'pumpernikel', 'goladupa', 'admin', 'admin', 1),
 (24, 'lukassliw', 'rlQ3JVeiIa2Xk', 'admin', 'admin', 1),
 (25, 'tomaszewski', 'rlnv0Nb3SOjJA', 'tomasz', 'zegota', 0);
 
@@ -90,7 +86,7 @@ CREATE TABLE `koszyk` (
 --
 
 INSERT INTO `koszyk` (`unique_ID`, `ID_Klient`, `ID_Produktu`, `IloscSztuk`) VALUES
-(114, 25, 6, 2),
+(114, 25, 6, 3),
 (115, 25, 5, 1),
 (116, 25, 1, 1),
 (117, 25, 2, 1),
