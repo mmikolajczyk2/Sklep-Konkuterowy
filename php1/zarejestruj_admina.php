@@ -11,21 +11,34 @@
 	}
 	else
 	{
-		$admin = $_SESSION['admin'];
-		$forename = 'admin';
-		$surname = 'admin';
+		$login = $_SESSION['login'];
+
+		$sql = "SELECT * FROM danelogowania WHERE login = '$login'";
+
+		if($rezultat = @$polaczenie->query($sql))
+		{
+			$wiersz = $rezultat->fetch_assoc();
+		}
+		else
+		{
+			echo "Cos poszlo nie tak";
+		}
+
+		$forename = 'user';
+		$surname = 'user';
 		$login = $_POST['login'];
 		$haslo1 = $_POST['haslo1'];
 		$haslo2 = $_POST['haslo2'];
+		$setadmin = $_POST['setadmin'];
 		$crypt_haslo1 = crypt($_POST['haslo1'], 'rl');
 		$crypt_haslo2 = crypt($_POST['haslo2'], 'rl');
 
-		if($admin != 1)
+		if($wiersz['admin'] != 1)
 		{
 			$_SESSION['blad1'] = '<span style="color:red">Nie jesteś adminem</span>';
 			header('Location: nowy_admin.php');	
 		}
-		else if(empty($login)||empty($haslo1)||empty($haslo2)) 
+		else if(empty($login)||empty($haslo1)||empty($haslo2)||empty($setadmin)) 
 		{
 			$_SESSION['blad1'] = '<span style="color:red">Któreś pole jest puste!</span>';
 			header('Location: nowy_admin.php');
@@ -54,7 +67,7 @@
 				$ilu_userow = $rezultat->num_rows;
 				if($ilu_userow==0)
 				{
-					$sql = "INSERT INTO danelogowania (login, password, Imie, Nazwisko,admin) VALUES ('$login','$crypt_haslo1','$forename','$surname',1)";
+					$sql = "INSERT INTO danelogowania (login, password, Imie, Nazwisko, admin) VALUES ('$login','$crypt_haslo1','$forename','$surname', '$setadmin')";
 					if (mysqli_query($polaczenie, $sql)) {
 						$_SESSION['blad'] = '<span style="color:green">Zarejestrowano pomyślnie!</span>';
 						unset($_SESSION['blad1']);

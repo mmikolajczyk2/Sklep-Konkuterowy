@@ -9,17 +9,25 @@
 	<link rel="stylesheet" href="style/usun_przedmiot.css">
 </head>
 <body>
+	
+<?php include "dbadmin.php"; ?>
+
 	<div class="menu-bar"> 
 	<ul>
 		<?php
-			echo "Witaj, ".$_SESSION['Imie']."!";
+			echo "Witaj, ".$wiersz['login']."!";
 		?>
-		<li class="active">Wybierz opcję admina</li>
+		<li>Wybierz opcję Edycji</li>
 		<li><a href="zamowienia.php">Zamówienia</a></li>
 		<li><a href="nowy_przedmiot.php">Nowy przedmiot</a></li>
-		<li><a href="usun_przedmiot.php">Usuń przedmiot</a></li>
-		<li><a href="nowy_admin.php">Nowy admin</a></li>
-		<li><a href="index.php">Wyloguj się </a></li>
+		<li class="active"><a href="usun_przedmiot.php">Usuń przedmiot</a></li>
+
+		<?php if($wiersz['admin'] == 1): ?>
+			<li><a href="nowy_admin.php">Nowy user</a></li>
+			<li><a href="edycja_userow.php">Edycja userów</a></li>
+        <?php endif; ?>
+		
+		<li><a href="index.php">Wyloguj się </a>
 	</ul>
 	</div>
 	<style>

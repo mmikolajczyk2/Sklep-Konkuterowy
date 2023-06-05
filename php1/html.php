@@ -92,7 +92,7 @@
 	}
 	.okbutton input[type="submit"]:hover
 	{
-		curson: pointer;
+		cursor: pointer;
 		background: #ffc107;
 		color: #000;
 	}

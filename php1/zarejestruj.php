@@ -56,7 +56,7 @@
 				$ilu_userow = $rezultat->num_rows;
 				if($ilu_userow==0)
 				{
-					$sql = "INSERT INTO danelogowania (login, password, Imie, Nazwisko) VALUES ('$login','$crypt_haslo1','$forename','$surname')";
+					$sql = "INSERT INTO danelogowania (login, password, Imie, Nazwisko, admin) VALUES ('$login','$crypt_haslo1','$forename','$surname', 0)";
 					if (mysqli_query($polaczenie, $sql)) {
 						$_SESSION['blad'] = '<span style="color:green">Zarejestrowano pomyślnie!</span>';
 						unset($_SESSION['blad1']);

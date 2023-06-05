@@ -4,8 +4,9 @@
 <html lang="pl">
 <head>
 	<meta charset="utf-8" />
-	<title>Sklep internetowy</title>
 	<link rel="stylesheet" href="style/adminstyle.css">
+	<link rel="stylesheet" href="style/nowy_admin.css">
+
 </head>
 <body>
 
@@ -16,16 +17,12 @@
 		<?php
 			echo "Witaj, ".$wiersz['login']."!";
 		?>
-		<li class="active">Wybierz opcję Edycji</li>
+		<li>Wybierz opcję Edycji</li>
 		<li><a href="zamowienia.php">Zamówienia</a></li>
 		<li><a href="nowy_przedmiot.php">Nowy przedmiot</a></li>
 		<li><a href="usun_przedmiot.php">Usuń przedmiot</a></li>
-
-		<?php if($wiersz['admin'] == 1): ?>
-			<li><a href="nowy_admin.php">Nowy user</a></li>
-			<li><a href="edycja_userow.php">Edycja userów</a></li>
-        <?php endif; ?>
-		
+		<li><a href="nowy_admin.php">Nowy user</a></li>
+		<li class="active"><a href="edycaj_userow.php">Edycja userów</a></li>
 		<li><a href="index.php">Wyloguj się </a>
 	</ul>
 	</div>
