@@ -6,6 +6,7 @@
 	<meta charset="utf-8" />
 	<link rel="stylesheet" href="style/adminstyle.css">
 	<link rel="stylesheet" href="style/nowy_admin.css">
+	<link rel="stylesheet" href="style/edycja_userow.css">
 
 </head>
 <body>

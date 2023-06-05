@@ -7,37 +7,47 @@
 }
 body
 {
-	background-image: url(background.jpg);
+	background-image: url(background2.jpg);
 	background-size: cover;
-	background-position: center;
+	background-position: auto;
 	
 	font-family: sans-serif;
 }
 .menu-bar
 {
-	background: rgb(0,100,0);
+	background: linear-gradient(to bottom, #000000d6, rgba(39, 39, 39, 0));
 	text-align: center;
+	font-weight:bold;
 }
 .menu-bar ul
 {
-	display: inline-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	list-style: none;
 	color: #fff;
+	
 }
 .menu-bar ul li
 {
-	width: 185px;
-	margin: 15px;
-	padding: 20px;
-	border: 5px solid white;
+	width: 180px;
+	margin: 25px;
+	padding: 10px;
+	border: 5px solid rgb(25, 1, 159);
+	transition: background-color 0.3s ease;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 20px
 }
 .menu-bar ul li a
 {
 	text-decoration: none;
 	color: #fff;
+	text-shadow: 2px 2px 4px rgb(106, 106, 106);
 }
 .active, .menu-bar ul li:hover
 {
-		background: #2bab0d;
-		border-radius: 3px;
+	background: #0526e2a3;
+	border-radius: 20px;
+	cursor: pointer;
 }

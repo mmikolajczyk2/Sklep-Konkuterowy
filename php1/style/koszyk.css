@@ -2,29 +2,43 @@
 			{
 				width: 800px;
 				height: 150px;
-				background-image: linear-gradient(to right,#deeaee,#FFFECF,#C3EBF9,#C2F5CF,#FFFECF);
-				border: 5px solid rgb(136, 15, 136);
-				margin: 0 auto;
+				background-image: linear-gradient(to left,#5459eb,#7386ff,#7386ff,#5459eb);
+				border: 5px solid gold;
+				border-radius: 30px;
+				margin: auto;
 				margin-top: 50px;
 				font-size: 50px;
 				text-align: center;
+				animation: fadeIn 1s forwards;
 			}
 			.pay-container input[type="submit"]
 			{
 				margin-top: 10px;
-				border: none;
+				border: solid gold;
 				font-weight: bold;
 				outline: none;
 				height: 50px;
 				width: 250px;
-				background: #920848;
+				background: #6e6d8a;
 				color: #fff;
 				font-size: 16px;
 				border-radius: 30px;		
+				transition: background-color 0.3s ease;
 			}
 			.pay-container input[type="submit"]:hover
 			{
 				cursor: pointer;
-				background: #26073b;
+				background: #fcd93a;
 				color: #000;
 			}
+
+			@keyframes fadeIn {
+				0% {
+				  opacity: 0;
+				  transform: translateY(20px);
+				}
+				100% {
+				  opacity: 1;
+				  transform: translateY(0);
+				}
+			  }

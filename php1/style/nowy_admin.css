@@ -1,17 +1,19 @@
-	.loginbox
+.loginbox
 	{
-		width: 420px;
-		height: 530px;
+		width: 400px;
+		height: 480px;
 		background: #000;
 		color: #fff;
 		top: 20%;
-		left: 38%;
+		left: 37%;
 		position: absolute;
 		transform: trasnlate(-50%,-50%);
 		box-sizing: border-box;
 		padding: 70px 30px;
 		border-style: solid;
+		border-radius: 50px;
 	}
+
 
 	h1
 	{
@@ -34,7 +36,7 @@
 		margin-bottom: 20px;
 	}
 
-	.loginbox input[type="text"], input[type="password"], input[type="setadmin"]
+	.loginbox input[type="text"], input[type="password"]
 	{
 		border: none;
 		border-bottom: 1px solid #fff;

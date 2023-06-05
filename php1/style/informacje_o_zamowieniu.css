@@ -1,8 +1,9 @@
 .profile-main-container{
     width: 800px;
     height: 95px;
-    background-image: linear-gradient(to right,#deeaee,#FFFECF,#C3EBF9,#C2F5CF,#FFFECF);
-    border: 5px solid green;
+    background-image: linear-gradient(to left,#5459eb,#7386ff,#7386ff,#5459eb);
+        border: 5px solid gold;
+        border-radius: 50px;
     margin: 0 auto;
     margin-top: 50px;
     font-size: 50px;
@@ -42,8 +43,9 @@
 .container-for-goods{
     width: 800px;
     height: 75px;
-    background-image: linear-gradient(to right,#deeaee,#FFFECF,#C3EBF9,#C2F5CF,#FFFECF);
-    border: 5px solid green;
+	background-image: linear-gradient(to left,#5459eb,#7386ff,#7386ff,#5459eb);
+	border: 5px solid gold;
+	border-radius: 50px;
     margin: 0 auto;
     margin-top: 25px;
     font-size: 50px;
@@ -68,10 +70,9 @@
 	{
 		width: 800px;
 		height: 95px;
-		background-image: linear-gradient(to right,#deeaee,#FFFECF,#C3EBF9,#C2F5CF,#FFFECF);
-		border-left: 5px solid green;
-		border-bottom: 5px solid green;
-		border-right: 5px solid green;
+		background-image: linear-gradient(to left,#5459eb,#7386ff,#7386ff,#5459eb);
+        border: 5px solid gold;
+        border-radius: 50px;
 		margin: 0 auto;
 		margin-top: 0px;
 		font-size: 50px;
@@ -107,10 +108,9 @@
 	{
 		width: 800px;
 		height: 95px;
-		background-image: linear-gradient(to right,#deeaee,#FFFECF,#C3EBF9,#C2F5CF,#FFFECF);
-		border-left: 5px solid green;
-		border-bottom: 5px solid green;
-		border-right: 5px solid green;
+		background-image: linear-gradient(to left,#5459eb,#7386ff,#7386ff,#5459eb);
+        border: 5px solid gold;
+        border-radius: 50px;
 		margin: 0 auto;
 		margin-top: 0px;
 		font-size: 50px;

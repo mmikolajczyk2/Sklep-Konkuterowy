@@ -1,19 +1,10 @@
-
-*
-{
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-
-
-}
 body
 {
 	background-image: url(background2.jpg);
 	background-size: cover;
 	background-position: auto;
 	
-	font-family: 'Montserrat', sans-serif;;
+	font-family: sans-serif;
 }
 .menu-bar
 {
@@ -21,14 +12,15 @@ body
 	text-align: center;
 	font-weight:bold;
 }
+
 .menu-bar ul
 {
-	
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	list-style: none;
-	color: #ffffff;
+	color: #fff;
+	
 }
 .menu-bar ul li
 {
@@ -40,7 +32,6 @@ body
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 20px
-	
 }
 .menu-bar ul li a
 {
@@ -50,16 +41,28 @@ body
 }
 .active, .menu-bar ul li:hover
 {
-		background: #0526e2a3;
-		border-radius: 20px;
-		cursor: pointer;
+	background: #0526e2a3;
+	border-radius: 20px;
+	cursor: pointer;
 }
 
-.image
-{
-	width: 180px;
-	height: 50px;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+.tabela {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-	
+.tabela th, .tabela td {
+    border: 1px solid #fff;
+    padding: 8px;
+    text-align: center;
+}
+
+.tabela th {
+    background: #000;
+    color: #fff;
+}
+
+.tabela td {
+    background: #333;
+    color: #fff;
+}
