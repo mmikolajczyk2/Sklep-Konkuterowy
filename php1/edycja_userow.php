@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<?php include "dbadmin.php"; ?>
+	<?php include "dbadmin.php"; ?>
 
 	<div class="menu-bar"> 
 	<ul>
@@ -25,6 +25,48 @@
 		<li class="active"><a href="edycaj_userow.php">Edycja userów</a></li>
 		<li><a href="index.php">Wyloguj się </a>
 	</ul>
+	</div>
+
+		<h2>Użytkownicy</h2>
+	<div>
+		<table class = "tabela">
+			<thead>
+				<th>ID_Klient</th>
+				<th>login</th>
+				<th>Imie</th>
+				<th>Nazwisko</th>
+				<th>admin</th>
+			</thead>
+			<tbody>
+				<?php
+
+				$sql = "SELECT * FROM danelogowania";
+				$rezultat = $polaczenie->query($sql);
+
+				if(!$rezultat)
+				{
+					die("Coś poszło nie tak." . $polaczenie->error);
+				}
+
+				while($wiersz = $rezultat->fetch_assoc())
+				{
+					echo "
+					<tr>
+						<td>$wiersz[ID_Klient]</td>
+						<td>$wiersz[login]</td>
+						<td>$wiersz[Imie]</td>
+						<td>$wiersz[Nazwisko]</td>
+						<td>$wiersz[admin]</td>
+						<td>
+							<a href='edytuj.php?login=$wiersz[login]'>Edit</a>
+							<a href='usun.php?login=$wiersz[login]'>Usuń</a>
+						</td>
+					</tr>
+					";
+				}
+				?>
+			</tbody>
+		</table>
 	</div>
 </body>
 </html>
