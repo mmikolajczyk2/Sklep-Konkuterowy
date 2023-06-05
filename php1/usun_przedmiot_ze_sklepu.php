@@ -6,7 +6,7 @@
 	<title>Sklep internetowy</title>
 	<link rel="stylesheet" href="style/adminstyle.css">
 	<link rel="stylesheet" href="style/usun_przedmiot_ze_sklepu1.css">
-	<link rel="stylesheet" href="style/usun_przedmiot_ze_sklepu2.css">
+	
 	
 </head>
 <body>

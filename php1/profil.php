@@ -7,7 +7,7 @@
 	<title>Sklep internetowy</title>
 	<link rel="stylesheet" href="style/categories.css">
 	<link rel="stylesheet" href="style/profil_1.css">
-	<link rel="stylesheet" href="style/profil_2.css">
+	
 
 	
 </head>

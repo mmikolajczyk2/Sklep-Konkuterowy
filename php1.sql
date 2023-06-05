@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Cze 04, 2023 at 05:02 PM
+-- Generation Time: Cze 05, 2023 at 01:49 PM
 -- Wersja serwera: 10.4.28-MariaDB
 -- Wersja PHP: 8.2.4
 
@@ -42,7 +42,9 @@ CREATE TABLE `daneadresowe` (
 --
 
 INSERT INTO `daneadresowe` (`ID_Klient`, `Adres`, `Email`, `KodPocztowy`, `Miasto`, `NrLokalu`, `unique_ID`) VALUES
-(20, 'os.gutowe 19', 'lukassliw115@gmail.com', 42420, 'Poznan', '54', 12);
+(20, 'os.gutowe 19', 'lukassliw115@gmail.com', 42420, 'Poznan', '54', 12),
+(25, 'os.gutowe 19', 'test@gmail.com', 37436, 'Poznan', '43', 13),
+(22, 'os.gutowe 32', 'teeest@gmail.com', 35323, 'Poznan', '44', 14);
 
 -- --------------------------------------------------------
 
@@ -66,7 +68,8 @@ CREATE TABLE `danelogowania` (
 INSERT INTO `danelogowania` (`ID_Klient`, `login`, `password`, `Imie`, `Nazwisko`, `admin`) VALUES
 (22, 'mikson123', 'rlpi9pxkQ80EI', 'mati', 'szmik', 1),
 (24, 'lukassliw', 'rlQ3JVeiIa2Xk', 'admin', 'admin', 1),
-(25, 'tomaszewski', 'rlnv0Nb3SOjJA', 'tomasz', 'zegota', 0);
+(25, 'tomaszewski', 'rlnv0Nb3SOjJA', 'tomasz', 'zegota', 0),
+(26, 'robson123', 'rlryBEHtlAXFI', 'robert', 'robson', 2);
 
 -- --------------------------------------------------------
 
@@ -86,13 +89,7 @@ CREATE TABLE `koszyk` (
 --
 
 INSERT INTO `koszyk` (`unique_ID`, `ID_Klient`, `ID_Produktu`, `IloscSztuk`) VALUES
-(114, 25, 6, 3),
-(115, 25, 5, 1),
-(116, 25, 1, 1),
-(117, 25, 2, 1),
-(118, 25, 7, 1),
-(119, 25, 3, 2),
-(120, 25, 8, 2);
+(133, 25, 3, 2);
 
 -- --------------------------------------------------------
 
@@ -143,34 +140,12 @@ CREATE TABLE `produktyzamowienia` (
 --
 
 INSERT INTO `produktyzamowienia` (`id_unique`, `ID_Zamowienia`, `ID_Produktu`, `Sztuki`) VALUES
-(60, 2, 9, 1),
-(61, 2, 35, 1),
-(62, 2, 7, 1),
-(63, 2, 8, 1),
-(64, 2, 3, 1),
-(65, 2, 1, 1),
-(66, 2, 2, 1),
-(70, 5, 6, 1),
-(71, 5, 9, 1),
-(72, 5, 13, 1),
-(73, 6, 9, 2),
-(74, 6, 1, 1),
-(75, 6, 2, 1),
-(76, 6, 11, 1),
-(77, 6, 12, 1),
-(78, 6, 13, 1),
-(79, 6, 17, 2),
-(80, 6, 18, 1),
-(81, 6, 5, 1),
-(82, 6, 6, 1),
-(83, 6, 35, 1),
-(84, 6, 7, 1),
-(85, 6, 8, 1),
-(86, 7, 6, 2),
-(87, 1, 3, 1),
-(88, 1, 37, 1),
-(89, 1, 2, 2),
-(90, 1, 12, 2);
+(98, 1, 3, 1),
+(99, 1, 2, 1),
+(100, 1, 6, 1),
+(101, 2, 8, 1),
+(102, 2, 3, 1),
+(103, 3, 3, 2);
 
 -- --------------------------------------------------------
 
@@ -213,11 +188,9 @@ CREATE TABLE `zamowienia` (
 --
 
 INSERT INTO `zamowienia` (`ID_Zamowienia`, `ID_Klient`, `Adres_unique_id`, `ID_Status`, `Opłata`, `DataDostarczeniaPrzewidywana`) VALUES
-(1, 20, 12, 1, 148.94, '2023-06-18'),
-(2, 1, 11, 3, 3302.92, '2020-12-31'),
-(5, 2, 4, 1, 2871.96, '2020-12-31'),
-(6, 1, 11, 1, 8816.79, '2020-12-31'),
-(7, 1, 2, 1, 501.98, '2020-12-24');
+(1, 25, 13, 3, 6900.98, '2023-06-21'),
+(2, 25, 13, 1, 2600.98, '2023-06-18'),
+(3, 22, 14, 1, 2401.98, '2023-06-18');
 
 --
 -- Indeksy dla zrzutów tabel
@@ -273,19 +246,19 @@ ALTER TABLE `zamowienia`
 -- AUTO_INCREMENT for table `daneadresowe`
 --
 ALTER TABLE `daneadresowe`
-  MODIFY `unique_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `unique_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `danelogowania`
 --
 ALTER TABLE `danelogowania`
-  MODIFY `ID_Klient` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `ID_Klient` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `koszyk`
 --
 ALTER TABLE `koszyk`
-  MODIFY `unique_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=121;
+  MODIFY `unique_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=134;
 
 --
 -- AUTO_INCREMENT for table `produkt`
@@ -297,7 +270,7 @@ ALTER TABLE `produkt`
 -- AUTO_INCREMENT for table `produktyzamowienia`
 --
 ALTER TABLE `produktyzamowienia`
-  MODIFY `id_unique` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=91;
+  MODIFY `id_unique` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=104;
 
 --
 -- AUTO_INCREMENT for table `statusy`

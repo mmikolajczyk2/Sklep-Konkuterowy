@@ -12,7 +12,7 @@
 </head>
 <body>
 	<div class="loginbox">
-	<img src="avatar.png" class="avatar">
+	<img src="assets/avatar.png" class="avatar">
 		<h1>Zaloguj się tu!</h1>
 		<form action="zaloguj.php" method="post">
 		
