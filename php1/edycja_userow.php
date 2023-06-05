@@ -22,7 +22,7 @@
 		<li><a href="nowy_przedmiot.php">Nowy przedmiot</a></li>
 		<li><a href="usun_przedmiot.php">Usuń przedmiot</a></li>
 		<li><a href="nowy_admin.php">Nowy user</a></li>
-		<li class="active"><a href="edycaj_userow.php">Edycja userów</a></li>
+		<li class="active"><a href="edycja_userow.php">Edycja userów</a></li>
 		<li><a href="index.php">Wyloguj się </a>
 	</ul>
 	</div>
@@ -58,8 +58,8 @@
 						<td>$wiersz[Nazwisko]</td>
 						<td>$wiersz[admin]</td>
 						<td>
-							<a href='edytuj.php?login=$wiersz[login]'>Edit</a>
-							<a href='usun.php?login=$wiersz[login]'>Usuń</a>
+							<a href='edytuj.php?ID_Klient=$wiersz[ID_Klient]'>Edit</a>
+							<a href='usun.php?ID_Klient=$wiersz[ID_Klient]'>Usuń</a>
 						</td>
 					</tr>
 					";

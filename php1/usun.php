@@ -1,7 +1,7 @@
 <?php
-if(isset($_GET["login"]))
+if(isset($_GET["ID_Klient"]))
 {
-    $login = $_GET["login"];
+    $ID_Klient = $_GET["ID_Klient"];
 
     	
 	$host = "localhost";
@@ -11,7 +11,7 @@ if(isset($_GET["login"]))
 
     $polaczenie = new mysqli($host, $db_user, $db_password, $db_name);
 
-    $sql = "DELETE FROM danelogowania WHERE 'login' = $login";
+    $sql = "DELETE FROM danelogowania WHERE ID_Klient = $ID_Klient";
     $polaczenie->query($sql);
 }
 
