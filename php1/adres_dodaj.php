@@ -1,7 +1,7 @@
 <?php
 	session_start();
 
-	require_once "connect.php";
+	require_once "connect.php"; 
 	
 	$polaczenie = new mysqli($host, $db_user, $db_password, $db_name);
 
@@ -16,10 +16,11 @@
 		$miasto = $_POST["miasto"];
 		$kod1 = $_POST["kod1"];
 		$kod2 = $_POST["kod2"];
-		$ulica = $_POST["ulica"];
+		$ulica = $_POST["ulica"]; 
 		$nrulicy = $_POST["nrulicy"];
 		$lokal = $_POST["lokal"];
 		
+		// Walidacja danych do wpisania nowego adresu przez użytkownika
 		if(empty($email) || empty($miasto) || empty($kod1) || empty($kod2) || empty($ulica) || empty($nrulicy))
 		{
 			$_SESSION['blad2'] = '<span style="color:red">Któreś pole jest puste!</span>';
@@ -35,7 +36,7 @@
 			$_SESSION['blad2'] = '<span style="color:red">Miasto jest niepoprawne!</span>';
 			header('Location: tworzenie_adresu.php');			
 		}
-		//echo gettype('$kod1');
+		
 		else if(ctype_alpha($kod1) || ctype_alpha($kod2))
 		{
 			$_SESSION['blad2'] = '<span style="color:red">Kody zawierają litery lub coś innego!</span>';

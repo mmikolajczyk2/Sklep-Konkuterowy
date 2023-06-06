@@ -118,7 +118,7 @@
 				echo '</form>';
 			}
 			
-			else //jest wystarczajaco duzo miejsca na 5 produktow
+			else 
 			{
 				echo '<form action="informacje_o_zamowieniu.php" method="post">';
 				echo '<div class="container-for-goods" style="height:200px">';

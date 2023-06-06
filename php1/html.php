@@ -17,7 +17,7 @@
 			?>
 			<li><a href=sklep.php>Strona Główna </a>
 			<li><a href="sluchawki.php">Słuchawki </a>
-			<li><a href="laptop.php">Laptopy </a>
+			<li><a href="laptop.php">Laptopy </a> 
 			<li><a href="konsola.php">Konsole </a>
 			<li><a href="koszyk.php">Koszyk</a>
 			<li><a href="profil.php">Profil</a>

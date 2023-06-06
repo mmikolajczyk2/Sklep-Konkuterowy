@@ -20,7 +20,7 @@
 		$crypt_haslo1 = crypt($_POST['haslo1'], 'rl');
 		$crypt_haslo2 = crypt($_POST['haslo2'], 'rl');
 		
-	
+	//Walidacja danych do zarejestrowania sie
 		if(empty($forename)||empty($surname)||empty($login)||
 			empty($haslo1)||empty($haslo2)) 
 		{

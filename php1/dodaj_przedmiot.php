@@ -20,6 +20,7 @@
 		$pos = strpos($text,$kategoria);
 		echo $pos;
 
+		// Walidacja danych do wpisania nowego przedmiotu przez admina/moderatora
 		if(empty($item) || empty($obrazek) || empty($cena) || empty($kategoria) || empty($opis))
 		{
 			$_SESSION['blad_item'] = '<span style="color:red">Któreś pole jest puste!</span>';

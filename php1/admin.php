@@ -1,7 +1,9 @@
-<?php include "dbconnect.php"; ?>
+
+<?php include "dbconnect.php"; ?> 
 
 <!DOCTYPE HTML>
-<html lang="pl">
+  
+<html lang="pl"> 
 <head>
 	<meta charset="utf-8" />
 	<title>Sklep internetowy</title>
@@ -14,15 +16,15 @@
 	<div class="menu-bar"> 
 	<ul>
 		<?php
-			echo "Witaj, ".$wiersz['login']."!";
+			echo "Witaj, ".$wiersz['login']."!";  // wyglad strony po zalogowaniu sie na admina
 		?>
 		<li class="active">Wybierz opcję Edycji</li>
 		<li><a href="zamowienia.php">Zamówienia</a></li>
 		<li><a href="nowy_przedmiot.php">Nowy przedmiot</a></li>
-		<li><a href="usun_przedmiot.php">Usuń przedmiot</a></li>
+		<li><a href="usun_przedmiot.php">Usuń przedmiot</a></li> 
 
-		<?php if($wiersz['admin'] == 1): ?>
-			<li><a href="nowy_admin.php">Nowy user</a></li>
+		<?php if($wiersz['admin'] == 1): ?> 
+			<li><a href="nowy_admin.php">Nowy user</a></li> 
 			<li><a href="edycja_userow.php">Edycja userów</a></li>
         <?php endif; ?>
 		

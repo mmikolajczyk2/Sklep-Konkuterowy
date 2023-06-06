@@ -52,17 +52,19 @@ body
 }
 
 .tabela th, .tabela td {
-    border: 1px solid #fff;
+	background-image: linear-gradient(to left,#5459eb,#7386ff,#7386ff,#5459eb);
+	border: 5px solid gold;
+
     padding: 8px;
     text-align: center;
 }
 
 .tabela th {
-    background: #000;
-    color: #fff;
+    background-image: linear-gradient(to left,#5459eb,#7386ff,#7386ff,#5459eb);
+    color: #000000;
 }
 
 .tabela td {
-    background: #333;
-    color: #fff;
+	background-image: linear-gradient(to left,#5459eb,#7386ff,#7386ff,#5459eb);
+    color: #000000;
 }

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Cze 05, 2023 at 11:23 PM
+-- Generation Time: Cze 06, 2023 at 02:17 PM
 -- Wersja serwera: 10.4.28-MariaDB
 -- Wersja PHP: 8.2.4
 
@@ -67,7 +67,7 @@ CREATE TABLE `danelogowania` (
 --
 
 INSERT INTO `danelogowania` (`ID_Klient`, `login`, `password`, `Imie`, `Nazwisko`, `admin`) VALUES
-(22, 'mikson123', 'rlpi9pxkQ80EI', 'mati', 'szmik', 1),
+(22, 'mikson123', 'rlpi9pxkQ80EI', 'mati', 'smiri', 1),
 (24, 'lukassliw', 'rlQ3JVeiIa2Xk', 'admin', 'admin', 1),
 (25, 'tomaszewski', 'rlnv0Nb3SOjJA', 'tomasz', 'zegota', 0),
 (27, 'tomcio123', 'rlQ3JVeiIa2Xk', 'Tomasz', 'Zigi', 0),
@@ -85,6 +85,13 @@ CREATE TABLE `koszyk` (
   `ID_Produktu` int(11) NOT NULL,
   `IloscSztuk` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_polish_ci;
+
+--
+-- Dumping data for table `koszyk`
+--
+
+INSERT INTO `koszyk` (`unique_ID`, `ID_Klient`, `ID_Produktu`, `IloscSztuk`) VALUES
+(139, 25, 8, 1);
 
 -- --------------------------------------------------------
 
@@ -107,15 +114,15 @@ CREATE TABLE `produkt` (
 --
 
 INSERT INTO `produkt` (`ID_Produktu`, `Nazwa`, `Kategoria`, `CenaZaSztuke`, `nazwaObrazku`, `opis`, `Promowanie`) VALUES
-(1, 'Laptop Gamingowy GYGABYTE', 'laptop', 2800.99, 'assets/laptop01.jpg', 'Fajny prezent na dzien dziecka', 0),
-(2, 'Laptop TUF', 'laptop', 3899.99, 'assets/laptop02.jpg', 'Idealny do grania w najnowsze produkcje', 0),
-(3, 'Nintendo Switch', 'konsola', 1200.99, 'assets/konsola01.jpg', 'Konsola na której pograsz w takie gry jak :Legend of Zelda, Mario, Metroid Prime', 0),
-(5, 'Sluchawki douszne', 'sluchawki', 750, 'assets/sluchawki01.jpg', 'Bardzo dobrej jakosci sluchawki douszne firmy apple', 0),
-(6, 'Sluchawki dla producentów', 'sluchawki', 1800, 'assets/sluchawki02.jpg', 'fenomenalne sluchawki nauszne, idealne dla przyszlych producentow muzycznych', 1),
-(7, 'sluchawki gamingowe', 'sluchawki', 750.99, 'assets/sluchawki03.jpg', 'Sluchawki dla prawdziwych gamerow, dzieki nim uslyszysz przeciwnika z kazdej strony', 0),
-(8, 'Xbox series S', 'konsola', 1399.99, 'assets/konsola02.jpg', 'konsola najnowszej generacji od Microsoftu, zagraj w gry juz teraz!!', 0),
-(9, 'PS5', 'konsola', 2499.98, 'assets/konsola03.jpg', 'Konsola od Sony, zagraj w takie tytuły jak god of war, last of us, spiderman 2', 1),
-(11, 'laptop gamingowy ROG', 'laptop', 3400.99, 'assets/laptop03.jpg', 'najpotezniejsza maszyna na rynku', 0);
+(1, 'Laptop Gamingowy GYGABYTE', 'Laptop', 2800.99, 'assets/laptop01.jpg', 'Fajny prezent na dzien dziecka', 0),
+(2, 'Laptop TUF', 'Laptop', 3899.99, 'assets/laptop02.jpg', 'Idealny do grania w najnowsze produkcje', 0),
+(5, 'Sluchawki douszne', 'Sluchawki', 750, 'assets/sluchawki01.jpg', 'Bardzo dobrej jakosci sluchawki douszne firmy apple', 0),
+(6, 'Sluchawki dla producentów', 'Sluchawki', 1800, 'assets/sluchawki02.jpg', 'fenomenalne sluchawki nauszne, idealne dla przyszlych producentow muzycznych', 1),
+(7, 'sluchawki gamingowe', 'Sluchawki', 750.99, 'assets/sluchawki03.jpg', 'Sluchawki dla prawdziwych gamerow, dzieki nim uslyszysz przeciwnika z kazdej strony', 0),
+(8, 'Xbox series S', 'Konsola', 1399.99, 'assets/konsola02.jpg', 'konsola najnowszej generacji od Microsoftu, zagraj w gry juz teraz!!', 0),
+(9, 'PS5', 'Konsola', 2499.98, 'assets/konsola03.jpg', 'Konsola od Sony, zagraj w takie tytuły jak god of war, last of us, spiderman 2', 1),
+(11, 'laptop gamingowy ROG', 'Laptop', 3400.99, 'assets/laptop03.jpg', 'najpotezniejsza maszyna na rynku', 0),
+(40, 'Nintendo Switch', 'Konsola', 2300.99, 'assets/konsola01.jpg', 'przenosna konsola do grania', 0);
 
 -- --------------------------------------------------------
 
@@ -135,13 +142,11 @@ CREATE TABLE `produktyzamowienia` (
 --
 
 INSERT INTO `produktyzamowienia` (`id_unique`, `ID_Zamowienia`, `ID_Produktu`, `Sztuki`) VALUES
-(98, 1, 3, 1),
-(99, 1, 2, 1),
-(100, 1, 6, 1),
 (104, 4, 9, 1),
 (105, 4, 2, 1),
 (106, 4, 7, 1),
-(107, 2, 3, 2);
+(108, 1, 8, 1),
+(109, 1, 9, 1);
 
 -- --------------------------------------------------------
 
@@ -184,8 +189,7 @@ CREATE TABLE `zamowienia` (
 --
 
 INSERT INTO `zamowienia` (`ID_Zamowienia`, `ID_Klient`, `Adres_unique_id`, `ID_Status`, `Opłata`, `DataDostarczeniaPrzewidywana`) VALUES
-(1, 25, 13, 3, 6900.98, '2023-06-23'),
-(2, 25, 13, 1, 2401.98, '2023-06-19'),
+(1, 25, 13, 1, 3899.97, '2023-06-20'),
 (4, 27, 15, 1, 7150.96, '2023-06-19');
 
 --
@@ -254,19 +258,19 @@ ALTER TABLE `danelogowania`
 -- AUTO_INCREMENT for table `koszyk`
 --
 ALTER TABLE `koszyk`
-  MODIFY `unique_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=137;
+  MODIFY `unique_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=140;
 
 --
 -- AUTO_INCREMENT for table `produkt`
 --
 ALTER TABLE `produkt`
-  MODIFY `ID_Produktu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `ID_Produktu` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT for table `produktyzamowienia`
 --
 ALTER TABLE `produktyzamowienia`
-  MODIFY `id_unique` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=108;
+  MODIFY `id_unique` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=110;
 
 --
 -- AUTO_INCREMENT for table `statusy`

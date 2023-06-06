@@ -1,5 +1,5 @@
 <?php
-
+//połaczenie z baza danych 
 	session_start();
 	require_once "connect.php";
 	

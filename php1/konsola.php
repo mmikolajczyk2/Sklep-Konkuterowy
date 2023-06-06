@@ -2,7 +2,7 @@
 <?php include "html.php"; ?>
 		
 	<?php
-		$sql = "SELECT * FROM produkt WHERE Kategoria='konsola'";
+		$sql = "SELECT * FROM produkt WHERE Kategoria='Konsola'";
 		$rezultat = @$polaczenie->query($sql);
 		while($row = $rezultat->fetch_assoc()) 
 		{
@@ -20,7 +20,7 @@
 			echo '		</div>';
 			echo '		<div class="okbutton">';
 			echo '			<input type="submit" value="DODAJ DO KOSZYKA!"/>';
-			echo '			<input type="hidden" name="kategoria" value="konsola"/>';
+			echo '			<input type="hidden" name="kategoria" value="Konsola"/>';
 			echo '			<input type="hidden" name="id_produktu" value="'.$row["ID_Produktu"].'"/>';
 			echo '		</div>';		
 			echo '	</div>';

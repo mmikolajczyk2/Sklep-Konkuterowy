@@ -3,7 +3,7 @@
 	
 		
 	<?php
-		$sql = "SELECT * FROM produkt WHERE Kategoria='laptop'";
+		$sql = "SELECT * FROM produkt WHERE Kategoria='Laptop'";
 		$rezultat = @$polaczenie->query($sql);
 		while($row = $rezultat->fetch_assoc()) 
 		{
@@ -21,7 +21,7 @@
 			echo '		</div>';
 			echo '		<div class="okbutton">';
 			echo '			<input type="submit" value="DODAJ DO KOSZYKA!"/>';
-			echo '			<input type="hidden" name="kategoria" value="laptop"/>';
+			echo '			<input type="hidden" name="kategoria" value="Laptop"/>';
 			echo '			<input type="hidden" name="id_produktu" value="'.$row["ID_Produktu"].'"/>';
 			echo '		</div>';		
 			echo '	</div>';
